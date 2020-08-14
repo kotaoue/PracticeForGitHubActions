@@ -1,4 +1,4 @@
-module.export = function fizzbuzz(value) {
+module.exports = function fizzbuzz(value) {
     if (value % 15 === 0) {
         return "FizzBuzz";
     }
