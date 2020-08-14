@@ -55,4 +55,21 @@ $ npm test
 
 
 npm ERR! Test failed.  See above for more details.
+
+# change module.export to module.exports on index.js
+$ npm test
+
+> fizz-buzz@1.0.0 test /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2
+> mocha
+
+
+
+  fizzbuzz
+    ✓ returns FizzBuzz when value is divisible by 15
+    ✓ returns Fizz when value is divisible by 3
+    ✓ returns Buzz when value is divisible by 5
+    ✓ returns the value when value is not divisible by 3 or 5
+
+
+  4 passing (4ms)
 ```
