@@ -1,4 +1,11 @@
 # ch2
+
+## Install
+```bash
+$ npm install
+```
+
+## History
 ```bash
 $ cd ~/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/
 $ npm test
