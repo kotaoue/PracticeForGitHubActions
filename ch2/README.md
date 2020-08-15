@@ -81,4 +81,39 @@ $ npm test
   4 passing (4ms)
 
 $ npm install --save-dev eslint @cybozu/eslint-config prettier
+
+$ touch .eslintrc.js
+$ npm run lint
+
+> fizz-buzz@1.0.0 lint /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2
+> eslint .
+
+
+Oops! Something went wrong! :(
+
+ESLint: 7.7.0
+
+Error: ESLint configuration in .eslintrc.js is invalid:
+        - Unexpected top-level property "extemds".
+
+    at validateConfigSchema (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/shared/config-validator.js:261:15)
+    at ConfigArrayFactory._normalizeConfigData (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/config-array-factory.js:626:9)
+    at ConfigArrayFactory.loadInDirectory (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/config-array-factory.js:496:33)
+    at CascadingConfigArrayFactory._loadConfigInAncestors (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/cascading-config-array-factory.js:355:46)
+    at CascadingConfigArrayFactory.getConfigArrayForFile (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/cascading-config-array-factory.js:276:18)
+    at FileEnumerator._iterateFilesRecursive (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/file-enumerator.js:431:49)
+    at _iterateFilesRecursive.next (<anonymous>)
+    at FileEnumerator.iterateFiles (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/file-enumerator.js:287:49)
+    at iterateFiles.next (<anonymous>)
+    at CLIEngine.executeOnFiles (/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/node_modules/eslint/lib/cli-engine/cli-engine.js:751:48)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! fizz-buzz@1.0.0 lint: `eslint .`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the fizz-buzz@1.0.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/kota.oue/.npm/_logs/2020-08-15T03_14_25_499Z-debug.log
 ```
