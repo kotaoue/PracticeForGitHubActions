@@ -79,4 +79,6 @@ $ npm test
 
 
   4 passing (4ms)
+
+$ npm install --save-dev eslint @cybozu/eslint-config prettier
 ```
