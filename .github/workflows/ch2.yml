@@ -1,12 +1,15 @@
 on: [push, pull_request]
 
+env:
+  SCOPE: workflows
+
 jobs:
-  docker_version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://gcr.io/cloud-builders/gcloud
-        with:
-          args: version
+  # docker_version:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: docker://gcr.io/cloud-builders/gcloud
+  #      with:
+  #        args: version
 
   args_test:
     runs-on: ubuntu-latest
@@ -44,3 +47,13 @@ jobs:
     steps:
       - run: sleep 1
         timeout-minutes: 1
+
+  echoenv:
+    runs-on: ubuntu-latest
+    env:
+      SCOPE: jobs
+    steps:
+      - run: echo ${SCOPE}
+      - env:
+          SCOPE: steps
+        run: echo ${SCOPE}
