@@ -16,10 +16,31 @@ jobs:
           entrypoint: /bin/echo
           args: Hello World!
 
-  pwsls:
+  pwdls:
     runs-on: ubuntu-latest
     steps:
       - run: |
           pwd
           ls
         working-directory: /tmp
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          import sys
+          print(sys.version)
+        shell: python
+
+  eux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"
+        shell: bash -eux {0}
+
+  other:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - run: sleep 1
+        timeout-minutes: 1
