@@ -3,6 +3,7 @@ Study log for ISBN: 978-4844378716.
 [GitHub Actions 実践入門](https://nextpublishing.jp/book/11908.html)
 
 ![Continuous Integration](https://github.com/kotaoue/PracticeForGitHubActions/workflows/Continuous%20Integration/badge.svg)
+![.github/workflows/md.yml](https://github.com/kotaoue/PracticeForGitHubActions/workflows/.github/workflows/md.yml/badge.svg)
 
 ## Links
 * [Azure IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
