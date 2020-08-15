@@ -1,3 +1,4 @@
+name: Echo Default ENV
 on: [push, pull_request]
 
 env:
