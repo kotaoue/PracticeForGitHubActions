@@ -1,3 +1,4 @@
+name: Use GitHub Token
 on: push
 
 jobs:
