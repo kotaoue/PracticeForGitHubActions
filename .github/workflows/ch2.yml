@@ -4,7 +4,7 @@ jobs:
   args_test:
     runs-on: ubuntu-latest
     steps:
-      - uses: docker://apline:3.11
+      - uses: docker://alpine:3.11
         with:
           entrypoint: /bin/echo
           args: Hello World!
