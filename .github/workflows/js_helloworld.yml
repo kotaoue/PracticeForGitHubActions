@@ -1,0 +1,15 @@
+name: Js Hello World
+on: push
+
+jobs:
+  hellolocal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+
+  helloworld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./action_helloworld.yml
