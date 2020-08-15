@@ -10,3 +10,4 @@ Study log for ISBN: 978-4844378716.
 * [GitHub Actionsワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 * [actions/cache examples](https://github.com/actions/cache/blob/main/examples.md)
 * [actions/upload-artifact](https://github.com/actions/upload-artifact)
+* [actions/download-artifact](https://github.com/actions/download-artifact)
