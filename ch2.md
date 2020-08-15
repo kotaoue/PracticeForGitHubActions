@@ -177,4 +177,27 @@ $ npm run lint
 
 > fizz-buzz@1.0.0 lint /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2
 > eslint .
+
+$ npm run test
+
+> fizz-buzz@1.0.0 test /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions
+> nyc --reporter=html --reporter=text mocha
+
+
+
+  fizzbuzz
+    ✓ returns FizzBuzz when value is divisible by 15
+    ✓ returns Fizz when value is divisible by 3
+    ✓ returns Buzz when value is divisible by 5
+    ✓ returns the value when value is not divisible by 3 or 5
+
+
+  4 passing (3ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |                   
+ index.js |     100 |      100 |     100 |     100 |                   
+----------|---------|----------|---------|---------|-------------------
 ```
