@@ -7,5 +7,6 @@ Study log for ISBN: 978-4844378716.
 * [Software installed on GitHub-hosted runners](https://docs.github.com/en/actions/reference/software-installed-on-github-hosted-runners)
 * [github-actions-up-and-running/fizz-buzz](https://github.com/github-actions-up-and-running/fizz-buzz)
 * [GitHub App Permissions](https://developer.github.com/v3/apps/permissions/)
-* [GitHub Actions?????????](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)\
+* [GitHub Actionsワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 * [actions/cache examples](https://github.com/actions/cache/blob/main/examples.md)
+* [actions/upload-artifact](https://github.com/actions/upload-artifact)
