@@ -8,6 +8,7 @@ Study log for ISBN: 978-4844378716.
 * [github-actions-up-and-running/fizz-buzz](https://github.com/github-actions-up-and-running/fizz-buzz)
 * [GitHub App Permissions](https://developer.github.com/v3/apps/permissions/)
 * [GitHub Actionsワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
+* [GitHub Actionsワークフローをトリガーするイベント](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 * [actions/cache examples](https://github.com/actions/cache/blob/main/examples.md)
 * [actions/upload-artifact](https://github.com/actions/upload-artifact)
 * [actions/download-artifact](https://github.com/actions/download-artifact)
