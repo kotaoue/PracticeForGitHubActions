@@ -172,4 +172,9 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /Users/kota.oue/.npm/_logs/2020-08-15T03_16_25_853Z-debug.log
+
+$ npm run lint
+
+> fizz-buzz@1.0.0 lint /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2
+> eslint .
 ```
