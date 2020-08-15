@@ -116,4 +116,60 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /Users/kota.oue/.npm/_logs/2020-08-15T03_14_25_499Z-debug.log
+
+# modify TYPO in .eslintrc.js
+$ npm run lint
+
+> fizz-buzz@1.0.0 lint /Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2
+> eslint .
+
+
+/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/.eslintrc.js
+  2:3  error  Delete `··`                                            prettier/prettier
+  3:3  error  Delete `··`                                            prettier/prettier
+  4:1  error  Replace `········mocha:·true` with `····mocha:·true,`  prettier/prettier
+  5:1  error  Replace `····}` with `··},`                            prettier/prettier
+  6:3  error  Insert `⏎`                                             prettier/prettier
+
+/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/index.js
+   2:3  error  Delete `··`                     prettier/prettier
+   3:5  error  Delete `····`                   prettier/prettier
+   4:1  error  Replace `····` with `··`        prettier/prettier
+   6:1  error  Delete `··`                     prettier/prettier
+   7:1  error  Delete `····`                   prettier/prettier
+   8:3  error  Delete `··`                     prettier/prettier
+  10:1  error  Delete `··`                     prettier/prettier
+  11:1  error  Replace `········` with `····`  prettier/prettier
+  12:3  error  Delete `··`                     prettier/prettier
+  14:1  error  Delete `··`                     prettier/prettier
+  15:3  error  Insert `⏎`                      prettier/prettier
+
+/Users/kota.oue/ghq/github.com/kotaoue/PracticeForGitHubActions/ch2/test/index.js
+   5:3  error  Delete `··`               prettier/prettier
+   6:5  error  Delete `····`             prettier/prettier
+   7:3  error  Delete `··`               prettier/prettier
+   9:1  error  Replace `····` with `··`  prettier/prettier
+  10:5  error  Delete `····`             prettier/prettier
+  11:3  error  Delete `··`               prettier/prettier
+  13:1  error  Replace `····` with `··`  prettier/prettier
+  14:5  error  Delete `····`             prettier/prettier
+  15:3  error  Delete `··`               prettier/prettier
+  17:1  error  Replace `····` with `··`  prettier/prettier
+  18:5  error  Delete `····`             prettier/prettier
+  19:3  error  Delete `··`               prettier/prettier
+  20:4  error  Insert `⏎`                prettier/prettier
+
+✖ 29 problems (29 errors, 0 warnings)
+  29 errors and 0 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! fizz-buzz@1.0.0 lint: `eslint .`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the fizz-buzz@1.0.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/kota.oue/.npm/_logs/2020-08-15T03_16_25_853Z-debug.log
 ```
