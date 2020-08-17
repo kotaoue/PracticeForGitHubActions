@@ -16,3 +16,5 @@ Study log for ISBN: 978-4844378716.
 * [actions/cache examples](https://github.com/actions/cache/blob/main/examples.md)
 * [actions/upload-artifact](https://github.com/actions/upload-artifact)
 * [actions/download-artifact](https://github.com/actions/download-artifact)
+* [actions/labeler](https://github.com/actions/labeler)
+* [dafujii/github-actions-labeler-example](https://github.com/dafujii/github-actions-labeler-example)
