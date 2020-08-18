@@ -18,7 +18,7 @@ jobs:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
   to-release:
-    if: github.base_ref == 'release'
+    if: github.head_ref == 'release'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/labeler@v2
@@ -27,7 +27,7 @@ jobs:
           configuration-path: ".github/labeler_to_release.yml"
 
   from-release:
-    if: github.head_ref == 'release' && github.base_ref == 'master'
+    if: github.head_ref == 'master' && github.base_ref == 'release'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/labeler@v2
