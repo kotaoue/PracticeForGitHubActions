@@ -12,10 +12,10 @@ jobs:
       - run: echo "${{ github.head_ref }}"
 
   master:
+    if: startsWith(github.head_ref, 'master')
     runs-on: ubuntu-latest
     steps:
-      - if: startsWith(github.head_ref, 'master')
-        run: echo "${{ github.head_ref }}"
+      - run: echo "${{ github.head_ref }}"
 
   release:
     if: startsWith(github.head_ref, 'release')
