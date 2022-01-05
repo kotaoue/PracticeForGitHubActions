@@ -8,5 +8,12 @@ jobs:
     name: Echo Message
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Ready for Review"
-      - run: echo "Draft ${{ github.event.pull_request.draft }} "
+      - name: echo
+        run: echo "Ready for Review"
+          echo "Draft ${{ github.event.pull_request.draft }} "
+      - name: if echo draft is true
+        if: ${{ github.event.pull_request.draft == true }}
+        run: echo "it's draft"
+      - name: if echo draft is true
+        if: ${{ github.event.pull_request.draft == false }}
+        run: echo "it's not draft"
