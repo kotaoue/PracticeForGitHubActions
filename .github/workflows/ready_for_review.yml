@@ -14,6 +14,6 @@ jobs:
       - name: if echo draft is true
         if: ${{ github.event.pull_request.draft == true }}
         run: echo "it's draft"
-      - name: if echo draft is true
+      - name: if echo draft is false
         if: ${{ github.event.pull_request.draft == false }}
         run: echo "it's not draft"
