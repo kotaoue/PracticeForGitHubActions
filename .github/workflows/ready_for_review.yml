@@ -8,5 +8,5 @@ jobs:
     name: Echo Message
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Ready for Review"
+      - run: echo "Ready for Review. draft to ready"
       - run: echo "Draft ${{ github.event.pull_request.draft }} "
