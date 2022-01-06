@@ -1,3 +1,7 @@
+console.log(require.resolve('.'))
+console.log(require.resolve('@actions'))
+console.log(require.resolve('@actions/core'))
+
 const core = require('@actions/core');
 const github = require('@actions/github');
 
