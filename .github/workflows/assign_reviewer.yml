@@ -1,3 +1,4 @@
+name: Assign Reviewer
 on:
   pull_request:
     types: [opened, edited, ready_for_review, converted_to_draft]
