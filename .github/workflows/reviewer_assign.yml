@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, converted_to_draft]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Assign
+        run: |
+          echo ${{github.head_ref}}
+          echo ${{github.head_head}}
+          echo ${{github.actor}}
