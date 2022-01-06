@@ -1,5 +1,6 @@
 name: test
-on: workflow_dispatch
+on: push
+
 jobs:
   js_action:
     runs-on: ubuntu-latest
