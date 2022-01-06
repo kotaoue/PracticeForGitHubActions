@@ -1,5 +1,5 @@
 console.log("jsjsjs");
-console.log(require.resolve('.'));
+console.log(require.resolve('once'));
 
 /*
 console.log(require.resolve('@actions'));
