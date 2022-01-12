@@ -1,4 +1,4 @@
-name: Auto Assign Reviewer
+name: Auto Assign Assignee
 on:
   pull_request:
     types: [opened, edited, ready_for_review, converted_to_draft]
