@@ -1,0 +1,23 @@
+name: Auto Create PullRequest
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, converted_to_draft]
+    branches:
+      - "master"
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo 'gh pr edit $NUMBER --add-assignee $ASSIGNEE'
+          echo ${{ toJson(github.event.pull_request) }}
+          echo ${{ github.event.pull_request.number }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.head_ref }}
+          echo ${{ github.repository }}
+        env:
+          ASSIGNEE: ${{ github.actor }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
