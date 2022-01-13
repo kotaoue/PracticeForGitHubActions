@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo 'gh pr create --base master --head feature/add --title $TITLE'
+          echo 'gh pr create --base master --head feature/add --title ${{ github.event.pull_request.title }}'
           echo ${{ toJson(github.event.pull_request) }}
           echo ${{ github.event.pull_request.number }}
           echo ${{ github.event.pull_request.body }}
