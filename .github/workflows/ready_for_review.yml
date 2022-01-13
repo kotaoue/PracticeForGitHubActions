@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "Ready for Review"
+        run: echo "Ready for Review. draft to ready"
           echo "Draft ${{ github.event.pull_request.draft }} "
       - name: if echo draft is true
         if: ${{ github.event.pull_request.draft == true }}
