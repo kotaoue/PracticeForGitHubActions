@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo 'gh pr edit $NUMBER --add-assignee $ASSIGNEE'
+          echo 'gh pr create --base master --head feature/add --title $TITLE'
           echo ${{ toJson(github.event.pull_request) }}
           echo ${{ github.event.pull_request.number }}
-          echo ${{ github.event.pull_request.title }}
+          echo ${{ github.event.pull_request.body }}
           echo ${{ github.base_ref }}
           echo ${{ github.head_ref }}
           echo ${{ github.repository }}
         env:
-          ASSIGNEE: ${{ github.actor }}
+          TITLE: ${{ github.pull_request.title }}
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
