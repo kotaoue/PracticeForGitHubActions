@@ -13,6 +13,7 @@ jobs:
           echo 'gh pr edit $NUMBER --add-assignee $ASSIGNEE'
           echo ${{ toJson(github.event.pull_request) }}
           echo ${{ github.event.pull_request.number }}
+          echo ${{ github.event.pull_request.title }}
           echo ${{ github.base_ref }}
           echo ${{ github.head_ref }}
           echo ${{ github.repository }}
